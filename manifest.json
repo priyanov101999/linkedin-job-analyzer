@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn JD Analyzer",
+    "version": "1.0",
+    "description": "Extracts years of experience and tech stack from LinkedIn job descriptions.",
+    "permissions": ["scripting"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.linkedin.com/jobs/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
